@@ -12,6 +12,11 @@ namespace QuizMaster.QuizCore
     {
         internal static List<QuizQuestion> GetQuestions()
         {
+            if (!File.Exists(Globals.QuestionsFilePath))
+            {
+                File.WriteAllText(Globals.QuestionsFilePath, JsonConvert.SerializeObject(new List<QuizQuestion>()));
+            }
+
             return JsonConvert.DeserializeObject<List<QuizQuestion>>(File.ReadAllText(Globals.QuestionsFilePath)) ?? new List<QuizQuestion>();
         }
     }
