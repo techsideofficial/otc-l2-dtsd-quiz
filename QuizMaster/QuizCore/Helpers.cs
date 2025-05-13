@@ -12,7 +12,7 @@ namespace QuizMaster.QuizCore
     {
         internal static List<QuizQuestion> GetQuestions()
         {
-            return JsonConvert.DeserializeObject<List<QuizQuestion>>(File.ReadAllText("questions.json")) ?? new List<QuizQuestion>();
+            return JsonConvert.DeserializeObject<List<QuizQuestion>>(File.ReadAllText(Globals.QuestionsFilePath)) ?? new List<QuizQuestion>();
         }
     }
 }

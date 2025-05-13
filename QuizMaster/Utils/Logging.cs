@@ -6,7 +6,7 @@
         {
             string tempMsg = String.Concat("[Log] ", message); // Attach a prefix, so it becomes "[Log] message" for easier readability.
             File.AppendAllText(
-                Path.Combine(Globals.ApplicationPath, "QuizMaster.log"), // Write the log file in the current directory.
+                Globals.LogFilePath, // Write the log file in the current directory.
                 tempMsg + "\n"
             );
         }
@@ -15,7 +15,7 @@
         {
             string tempMsg = String.Concat("[Warn] ", message);
             File.AppendAllText(
-                Path.Combine(Globals.ApplicationPath, "QuizMaster.log"),
+                Globals.LogFilePath,
                 tempMsg + "\n"
             );
         }
@@ -24,7 +24,7 @@
         {
             string tempMsg = String.Concat("[Error] ", message);
             File.AppendAllText(
-                Path.Combine(Globals.ApplicationPath, "QuizMaster.log"),
+                Globals.LogFilePath,
                 tempMsg + "\n"
             );
         }
