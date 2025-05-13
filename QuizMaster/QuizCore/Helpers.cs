@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using QuizMaster.Structs;
 
 namespace QuizMaster.QuizCore
@@ -11,7 +12,7 @@ namespace QuizMaster.QuizCore
     {
         internal static List<QuizQuestion> GetQuestions()
         {
-            return null;
+            return JsonConvert.DeserializeObject<List<QuizQuestion>>(File.ReadAllText("questions.json")) ?? new List<QuizQuestion>();
         }
     }
 }
