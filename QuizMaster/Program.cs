@@ -24,6 +24,7 @@
                     break;
                 default:
                     Console.WriteLine("Invalid input. Please try again.");
+                    Console.Clear(); // Clear the console for better readability.
                     PrintAndListenForOptions();
                     break;
             }
