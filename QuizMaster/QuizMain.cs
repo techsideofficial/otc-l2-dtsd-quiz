@@ -16,6 +16,7 @@ namespace QuizMaster
 
         internal static void QuizMain()
         {
+            // Get and store the questions in a local variable.
             List<QuizQuestion> quizQuestions = Helpers.GetQuestions();
             TotalQuestions = quizQuestions.Count;
 
@@ -23,8 +24,9 @@ namespace QuizMaster
             {
                 Dictionary<string, string> quizAnswers = new Dictionary<string, string>();
                 Console.WriteLine(q.Question);
+                // Display options and add them to a dictionary for answer checking.
                 int optionCntr = 0;
-                foreach (string option in q.Options) // Display options and add them to a dictionary for answer checking.
+                foreach (string option in q.Options)
                 {
                     Console.WriteLine($"{Helpers.GetOptionPrefix(optionCntr)}. {option}");
                     quizAnswers.Add(Helpers.GetOptionPrefix(optionCntr), option);
@@ -33,11 +35,13 @@ namespace QuizMaster
 
                 string response = "";
 
+                // If the response is invalid, ask again.
                 bool isValidResponse = false;
-                while (!isValidResponse) // If the response is invalid, ask again.
+                while (!isValidResponse)
                 {
                     Console.WriteLine("Enter your answer:");
-                    response = Console.ReadLine().ToUpper(); // Read the response and convert it to uppercase.
+                    // Read the response and convert it to uppercase for compatibility.
+                    response = Console.ReadLine().ToUpper();
                     if (!quizAnswers.ContainsKey(response))
                     {
                         Console.WriteLine("Invalid input. Please try again.");
@@ -52,6 +56,7 @@ namespace QuizMaster
                 {
                     Console.Clear();
                     Console.WriteLine("Correct!");
+                    // Use a line separator instead of clearing the console so the user can see their previous result.
                     Console.WriteLine("----");
                     CorrectAnswers++;
                 }
@@ -67,6 +72,7 @@ namespace QuizMaster
             PostQuizSeq();
         }
 
+        // Show the results of the quiz and return to the main menu.
         internal static void PostQuizSeq()
         {
             Console.WriteLine("Quiz Completed!");
@@ -75,7 +81,8 @@ namespace QuizMaster
             Console.WriteLine("Press any key to return to the main menu...");
             Console.ReadKey();
             Console.Clear();
-            Program.PrintAndListenForOptions(); // Return to the main menu.
+            // Return to the main menu.
+            Program.PrintAndListenForOptions();
         }
     }
 }
