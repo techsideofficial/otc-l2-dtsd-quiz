@@ -17,7 +17,9 @@
             switch (Console.ReadLine())
             {
                 case "1":
-                // Start the quiz
+                    // Start the quiz
+                    Quiz.QuizMain();
+                    break;
                 case "2":
                     // Quit the application
                     Environment.Exit(0);

@@ -10,6 +10,6 @@ namespace QuizMaster.Structs
     {
         public string? Question { get; set; }
         public string? Answer { get; set; }
-        public string[]? RandomizedOptions { get; set; }
+        public string[]? Options { get; set; }
     }
 }

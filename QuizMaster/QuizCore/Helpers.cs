@@ -19,5 +19,27 @@ namespace QuizMaster.QuizCore
 
             return JsonConvert.DeserializeObject<List<QuizQuestion>>(File.ReadAllText(Globals.QuestionsFilePath)) ?? new List<QuizQuestion>();
         }
+
+        internal static string GetOptionPrefix(int optionNumber)
+        {
+            char[] lettersLower = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
+            char[] lettersUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+            char[] numbers = "0123456789".ToCharArray();
+
+            string qOptionPrefix;
+            if (optionNumber < 26)
+            {
+                qOptionPrefix = lettersUpper[optionNumber].ToString();
+            }
+            else
+            {
+                int letterIndex = optionNumber / 26;
+                int numberIndex = optionNumber % 26;
+
+                qOptionPrefix = lettersUpper[letterIndex].ToString() + lettersUpper[letterIndex].ToString();
+            }
+
+            return qOptionPrefix;
+        }
     }
 }
