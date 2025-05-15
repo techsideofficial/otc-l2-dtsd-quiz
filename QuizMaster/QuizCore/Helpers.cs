@@ -20,6 +20,7 @@ namespace QuizMaster.QuizCore
             return JsonConvert.DeserializeObject<List<QuizQuestion>>(File.ReadAllText(Globals.QuestionsFilePath)) ?? new List<QuizQuestion>();
         }
 
+        // If the option number is more than 26, use two letters instead.
         internal static string GetOptionPrefix(int optionNumber)
         {
             char[] lettersLower = "abcdefghijklmnopqrstuvwxyz".ToCharArray();

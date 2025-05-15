@@ -7,12 +7,11 @@
             PrintAndListenForOptions();
         }
 
-        private static void PrintAndListenForOptions()
+        internal static void PrintAndListenForOptions()
         {
             Console.WriteLine("--QUIZMASTER--");
             Console.WriteLine("1. Start Quiz");
             Console.WriteLine("2. Quit Application");
-            Console.WriteLine("3. View all question data (DEBUG).");
 
             switch (Console.ReadLine())
             {
