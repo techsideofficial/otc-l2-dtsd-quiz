@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using QuizMaster.QuizCore;
 using QuizMaster.Structs;
+using QuizMaster.Utils;
 
 namespace QuizMaster
 {
@@ -20,10 +21,13 @@ namespace QuizMaster
             List<QuizQuestion> quizQuestions = Helpers.GetQuestions();
             TotalQuestions = quizQuestions.Count;
 
+            Logging.LogMessage($"Starting quiz with {TotalQuestions} questions.");
+
             foreach (QuizQuestion q in quizQuestions)
             {
                 Dictionary<string, string> quizAnswers = new Dictionary<string, string>();
                 Console.WriteLine(q.Question);
+                Logging.LogMessage($"Question: {q.Question}");
                 // Display options and add them to a dictionary for answer checking.
                 int optionCntr = 0;
                 foreach (string option in q.Options)
@@ -45,6 +49,7 @@ namespace QuizMaster
                     if (!quizAnswers.ContainsKey(response))
                     {
                         Console.WriteLine("Invalid input. Please try again.");
+                        Logging.LogError($"Invalid input: {response}");
                     }
                     else
                     {
@@ -56,6 +61,7 @@ namespace QuizMaster
                 {
                     Console.Clear();
                     Console.WriteLine("Correct!");
+                    Logging.LogMessage($"Correct answer: {q.Answer}");
                     // Use a line separator instead of clearing the console so the user can see their previous result.
                     Console.WriteLine("----");
                     CorrectAnswers++;
@@ -64,6 +70,7 @@ namespace QuizMaster
                 {
                     Console.Clear();
                     Console.WriteLine($"Incorrect! The correct answer is: {q.Answer}");
+                    Logging.LogMessage($"Incorrect answer: {q.Answer}");
                     Console.WriteLine("----");
                     IncorrectAnswers++;
                 }
