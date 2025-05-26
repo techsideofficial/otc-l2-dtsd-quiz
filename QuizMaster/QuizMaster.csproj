@@ -6,6 +6,22 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <ApplicationIcon>Assets\Icons\icon_default.ico</ApplicationIcon>
+    <SignAssembly>False</SignAssembly>
+    <PackageId>QuizMaster</PackageId>
+    <Title>QuizMaster</Title>
+    <Version>1.0.0</Version>
+    <Authors>Ciaran Saundry</Authors>
+    <Company>Ciaran Saundry</Company>
+    <Product>QuizMaster</Product>
+    <Description>An application designed to run simple quizzes.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
