@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using QuizMaster.Structs;
+using QuizMaster.Utils;
 
 namespace QuizMaster.QuizCore
 {
@@ -41,6 +42,17 @@ namespace QuizMaster.QuizCore
             }
 
             return qOptionPrefix;
+        }
+
+        internal static void ReturnToMenu(bool clearConsole)
+        {
+            if (clearConsole)
+            {
+                Console.Clear();
+            }
+
+            Logging.LogMessage("Returning to menu.");
+            Program.PrintAndListenForOptions();
         }
     }
 }

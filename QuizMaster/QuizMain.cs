@@ -17,8 +17,25 @@ namespace QuizMaster
 
         internal static void QuizMain()
         {
+            List<QuizQuestion> quizQuestions = new List<QuizQuestion>();
+
             // Get and store the questions in a local variable.
-            List<QuizQuestion> quizQuestions = Helpers.GetQuestions();
+            // If there is an error when loading the JSON, display an error, and return to the main menu.
+            try
+            {
+                quizQuestions = Helpers.GetQuestions();
+            }
+            catch (Exception ex)
+            {
+                Logging.LogError($"Error loading quiz questions: {ex.Message}");
+                Console.Clear();
+                Console.WriteLine("Failed to load quiz data from JSON.");
+                Console.WriteLine("Please make sure the JSON file exists and is correctly formatted.");
+                Console.WriteLine("Press any key to return to the main menu...");
+                Console.ReadKey();
+                Helpers.ReturnToMenu(true);
+            }
+
             TotalQuestions = quizQuestions.Count;
 
             Logging.LogMessage($"Starting quiz with {TotalQuestions} questions.");
@@ -87,9 +104,7 @@ namespace QuizMaster
             Console.WriteLine($"Accuracy: {(CorrectAnswers / (double)TotalQuestions) * 100}%");
             Console.WriteLine("Press any key to return to the main menu...");
             Console.ReadKey();
-            Console.Clear();
-            // Return to the main menu.
-            Program.PrintAndListenForOptions();
+            Helpers.ReturnToMenu(true);
         }
     }
 }
