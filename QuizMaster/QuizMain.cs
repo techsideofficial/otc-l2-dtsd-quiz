@@ -43,8 +43,10 @@ namespace QuizMaster
             foreach (QuizQuestion q in quizQuestions)
             {
                 Dictionary<string, string> quizAnswers = new Dictionary<string, string>();
-                Console.WriteLine(q.Question);
                 Logging.LogMessage($"Question: {q.Question}");
+                Console.WriteLine($"Question {quizQuestions.IndexOf(q) + 1}/{quizQuestions.Count}:");
+                Console.WriteLine(q.Question);
+                Console.WriteLine("----");
                 // Display options and add them to a dictionary for answer checking.
                 int optionCntr = 0;
                 foreach (string option in q.Options)
@@ -53,6 +55,7 @@ namespace QuizMaster
                     quizAnswers.Add(Helpers.GetOptionPrefix(optionCntr), option);
                     optionCntr++;
                 }
+                Console.WriteLine("----");
 
                 string response = "";
 
