@@ -18,6 +18,7 @@ namespace QuizMaster
             Console.WriteLine("1. Start Quiz");
             Console.WriteLine("2. Quit Application");
             Console.WriteLine("3. Help");
+            Console.WriteLine("4. Settings");
 
             switch (Console.ReadLine())
             {
@@ -39,6 +40,11 @@ namespace QuizMaster
                         FileName = "https://github.com/techsideofficial/otc-l2-dtsd-quiz/wiki", 
                         UseShellExecute = true 
                     });
+                    break;
+                case "4":
+                    Console.Clear();
+                    // Edit Questions
+                    QuizSettings.PrintAndListenForOptions();
                     break;
                 default:
                     Console.WriteLine("Invalid input. Please try again.");
