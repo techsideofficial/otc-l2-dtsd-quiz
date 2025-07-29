@@ -37,7 +37,7 @@ namespace QuizMaster
                         Console.Clear();
                         Console.WriteLine("Add an option (Type 'done' once you are finished adding answers):\n");
                         string input = Console.ReadLine();
-                        if (input == "done")
+                        if (input.ToLower() == "done")
                         {
                             isAddingOptions = false;
                             Console.Clear();

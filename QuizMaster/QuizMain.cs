@@ -105,7 +105,7 @@ namespace QuizMaster
         {
             Console.WriteLine("Quiz Completed!");
             Console.WriteLine($"Score: {CorrectAnswers}/{TotalQuestions}");
-            Console.WriteLine($"Accuracy: {(CorrectAnswers / (double)TotalQuestions) * 100}%");
+            Console.WriteLine($"Accuracy: {Convert.ToInt32((CorrectAnswers / (double)TotalQuestions) * 100)}%");
             Console.WriteLine("Press any key to return to the main menu...");
             Console.ReadKey();
             Helpers.ReturnToMenu(true);

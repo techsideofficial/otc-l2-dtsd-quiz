@@ -2,3 +2,4 @@
 /QuizMaster/obj
 /QuizMaster/bin
 !/QuizMaster/bin/*/QuizConfig_Questions.json
+/docs/node_modules
