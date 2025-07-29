@@ -21,6 +21,13 @@ namespace QuizMaster.QuizCore
             return JsonConvert.DeserializeObject<List<QuizQuestion>>(File.ReadAllText(Globals.QuestionsFilePath)) ?? new List<QuizQuestion>();
         }
 
+        internal static void WriteQuestion(QuizQuestion question)
+        {
+            List<QuizQuestion> questions = GetQuestions();
+            questions.Add(question);
+            File.WriteAllText(Globals.QuestionsFilePath, JsonConvert.SerializeObject(questions, Formatting.Indented));
+        }
+
         // If the option number is more than 26, use two letters instead.
         internal static string GetOptionPrefix(int optionNumber)
         {

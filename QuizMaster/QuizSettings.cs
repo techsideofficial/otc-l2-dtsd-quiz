@@ -16,6 +16,7 @@ namespace QuizMaster
         {
             Console.WriteLine("1. Return To Menu");
             Console.WriteLine("2. Add Question");
+            Console.WriteLine("3. List Questions");
 
             switch (Console.ReadLine())
             {
@@ -70,6 +71,19 @@ namespace QuizMaster
                         newQuestion.Answer = quizAnswers[response];
                     }
 
+                    Helpers.WriteQuestion(newQuestion);
+                    Console.Clear();
+                    break;
+                case "3":
+                    // List Questions
+                    Console.Clear();
+                    List<QuizQuestion> questions = Helpers.GetQuestions();
+                    foreach(QuizQuestion question in questions)
+                    {
+                        Console.WriteLine($"{questions.IndexOf(question) + 1}. {question.Question} ({question.Options.Count} Possible Answers)");
+                    }
+                    Console.WriteLine("Press any key to return to the settings menu...");
+                    Console.ReadKey();
                     Console.Clear();
                     break;
                 default:

@@ -89,7 +89,8 @@ namespace QuizMaster
                 else
                 {
                     Console.Clear();
-                    Console.WriteLine($"Incorrect! The correct answer is: {q.Answer}");
+                    // Console.WriteLine($"Incorrect! The correct answer is: {q.Answer}");
+                    Console.WriteLine("Incorrect!");
                     Logging.LogMessage($"Incorrect answer: {q.Answer}");
                     Console.WriteLine("----");
                     IncorrectAnswers++;
