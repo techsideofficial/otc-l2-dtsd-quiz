@@ -1,3 +1,4 @@
 /.vs
 /QuizMaster/obj
 /QuizMaster/bin
+!/QuizMaster/bin/*/QuizConfig_Questions.json

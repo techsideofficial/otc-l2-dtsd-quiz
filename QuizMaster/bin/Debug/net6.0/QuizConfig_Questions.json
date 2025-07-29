@@ -1,0 +1,202 @@
+[
+  {
+    "Options": [
+      "Entertain players during matches",
+      "Create game content and updates",
+      "Enforce rules and support a healthy community",
+      "Compete with players for top rankings"
+    ],
+    "Question": "What is the primary role of a game moderator?",
+    "Answer": "Enforce rules and support a healthy community"
+  },
+  {
+    "Options": [
+      "Ban them immediately",
+      "Warn the player and document the behavior",
+      "Ignore it if no one complains",
+      "Challenge them to stop or leave"
+    ],
+    "Question": "A player is repeatedly using offensive language in chat. What is your first action?",
+    "Answer": "Warn the player and document the behavior"
+  },
+  {
+    "Options": [
+      "Sending friend requests",
+      "Critiquing someone’s playstyle once",
+      "Repeated unwanted messages or threats",
+      "Winning against someone multiple times"
+    ],
+    "Question": "Which of the following is an example of harassment?",
+    "Answer": "Repeated unwanted messages or threats"
+  },
+  {
+    "Options": [
+      "Ban the accused immediately",
+      "Ignore the report",
+      "Collect evidence before taking action",
+      "Ask the accused player if they cheated"
+    ],
+    "Question": "A player reports another for cheating, but you don't see any proof. What should you do?",
+    "Answer": "Collect evidence before taking action"
+  },
+  {
+    "Options": [
+      "Matchmaking queue",
+      "Chat and voice logs",
+      "Game credits",
+      "Screenshot folders"
+    ],
+    "Question": "Which log should you check when investigating abuse reports?",
+    "Answer": "Chat and voice logs"
+  },
+  {
+    "Options": [
+      "Disagreeing with a moderator",
+      "Making minor mistakes in-game",
+      "Spamming voice or chat with disruptive content",
+      "Having a poor microphone"
+    ],
+    "Question": "What is an appropriate reason to mute a player?",
+    "Answer": "Spamming voice or chat with disruptive content"
+  },
+  {
+    "Options": [
+      "Confront them in public",
+      "Ignore it, they’re staff",
+      "Report the behavior to admin/supervisor",
+      "Join in to avoid conflict"
+    ],
+    "Question": "You witness a fellow moderator abusing their power. What should you do?",
+    "Answer": "Report the behavior to admin/supervisor"
+  },
+  {
+    "Options": [
+      "Promoting a player to moderator",
+      "Reporting an issue to higher staff",
+      "Making a conflict worse",
+      "Starting a match with more enemies"
+    ],
+    "Question": "What does \"escalation\" mean in moderation?",
+    "Answer": "Reporting an issue to higher staff"
+  },
+  {
+    "Options": [
+      "When another player requests it",
+      "If the player is banned",
+      "Only when authorized by admin or legal team",
+      "To settle an argument"
+    ],
+    "Question": "When is it acceptable to share private player data (like IP addresses)?",
+    "Answer": "Only when authorized by admin or legal team"
+  },
+  {
+    "Options": [
+      "High ping",
+      "Rapid unnatural movements or impossible accuracy",
+      "Playing with friends",
+      "Asking a lot of questions"
+    ],
+    "Question": "Which of the following is a sign of potential cheating?",
+    "Answer": "Rapid unnatural movements or impossible accuracy"
+  },
+  {
+    "Options": [
+      "To let players know moderators are watching",
+      "To satisfy complaints",
+      "To give players a chance to correct their behavior",
+      "To make things more dramatic"
+    ],
+    "Question": "What is the purpose of issuing a warning before a punishment?",
+    "Answer": "To give players a chance to correct their behavior"
+  },
+  {
+    "Options": [
+      "Gameplay mechanics",
+      "Community content policies (spam)",
+      "Visual design rules",
+      "Cheating prevention"
+    ],
+    "Question": "A user is flooding chat with emojis. What kind of rule is this violating?",
+    "Answer": "Community content policies (spam)"
+  },
+  {
+    "Options": [
+      "Replay viewer or spectate mode",
+      "The game’s settings menu",
+      "The player inventory screen",
+      "The matchmaking lobby"
+    ],
+    "Question": "What tool might a moderator use to monitor player behavior live?",
+    "Answer": "Replay viewer or spectate mode"
+  },
+  {
+    "Options": [
+      "Informally and like a friend",
+      "In a professional, calm, and unbiased manner",
+      "Only in emergencies",
+      "Through anonymous accounts"
+    ],
+    "Question": "How should moderators communicate with players?",
+    "Answer": "In a professional, calm, and unbiased manner"
+  },
+  {
+    "Options": [
+      "Ban them to be safe",
+      "Let the player know they were reported",
+      "Log the report and keep monitoring",
+      "Apologize to the reporter"
+    ],
+    "Question": "If a player is reported but you see no wrongdoing, what should you do?",
+    "Answer": "Log the report and keep monitoring"
+  },
+  {
+    "Options": [
+      "A break moderators take",
+      "A system to reduce action spamming",
+      "A waiting period after a punishment",
+      "A player’s internet lag"
+    ],
+    "Question": "What is a “cooldown” in moderation context?",
+    "Answer": "A system to reduce action spamming"
+  },
+  {
+    "Options": [
+      "Ignore the report",
+      "Handle it quickly to protect their friend",
+      "Pass the case to another moderator to avoid bias",
+      "Publicly defend the friend"
+    ],
+    "Question": "If a moderator is also friends with a reported player, they should:",
+    "Answer": "Pass the case to another moderator to avoid bias"
+  },
+  {
+    "Options": [
+      "Silencing a player for breaking rules",
+      "Banning someone for personal reasons",
+      "Reporting toxic players",
+      "Explaining the rules"
+    ],
+    "Question": "Which of these would be considered abuse of moderator powers?",
+    "Answer": "Banning someone for personal reasons"
+  },
+  {
+    "Options": [
+      "No second chances for severe violations",
+      "Minor issues are ignored",
+      "Players must be given 3 chances",
+      "Only admins can act"
+    ],
+    "Question": "What does “no tolerance” usually mean in a moderation policy?",
+    "Answer": "No second chances for severe violations"
+  },
+  {
+    "Options": [
+      "Delete the user",
+      "Leave the game",
+      "Document it in your mod tools or report system",
+      "Announce it to the server"
+    ],
+    "Question": "After issuing a ban, what should you do?",
+    "Answer": "Document it in your mod tools or report system"
+  }
+]
