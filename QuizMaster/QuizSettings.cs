@@ -66,7 +66,7 @@ namespace QuizMaster
                             Logging.LogError("ConsoleInputError: Invalid input. Please try again.");
                             continue;
                         }
-
+                        isPickingAnswer = false;
                         newQuestion.Answer = quizAnswers[response];
                     }
 
