@@ -23,7 +23,7 @@ const config = {
   url: 'https://techsideofficial.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/otc-l2-dtsd-quiz/',
+  baseUrl: '/otc-l2-dtsd-quiz/build/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
