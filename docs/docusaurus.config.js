@@ -20,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://quizmaster.github.io',
+  url: 'https://techsideofficial.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/otc-l2-dtsd-quiz/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'techsideofficial', // Usually your GitHub org/user name.
-  projectName: 'QuizMaster', // Usually your repo name.
+  projectName: 'otc-l2-dtsd-quiz', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
