@@ -66,6 +66,7 @@ namespace QuizMaster
                     Console.WriteLine("Enter your answer:");
                     // Read the response and convert it to uppercase for compatibility.
                     response = Console.ReadLine().ToUpper();
+
                     if (!quizAnswers.ContainsKey(response))
                     {
                         Console.WriteLine("Invalid input. Please try again.");

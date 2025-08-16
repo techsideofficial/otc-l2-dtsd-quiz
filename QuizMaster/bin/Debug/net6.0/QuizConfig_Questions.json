@@ -198,16 +198,5 @@
     ],
     "Question": "After issuing a ban, what should you do?",
     "Answer": "Document it in your mod tools or report system"
-  },
-  {
-    "Options": [
-      "hello",
-      "a",
-      "ddd",
-      "eff",
-      "eef"
-    ],
-    "Question": "select hello",
-    "Answer": "hello"
   }
 ]

@@ -14,16 +14,23 @@ namespace QuizMaster
     {
         internal static void PrintAndListenForOptions()
         {
-            Console.WriteLine("1. Return To Menu");
+            Console.WriteLine("1. List Questions");
             Console.WriteLine("2. Add Question");
-            Console.WriteLine("3. List Questions");
+            Console.WriteLine("3. Return To Menu");
 
             switch (Console.ReadLine())
             {
                 case "1":
-                    // Return to menu
+                    // List Questions
                     Console.Clear();
-                    Program.PrintAndListenForOptions();
+                    List<QuizQuestion> questions = Helpers.GetQuestions();
+                    foreach (QuizQuestion question in questions)
+                    {
+                        Console.WriteLine($"{questions.IndexOf(question) + 1}. {question.Question} ({question.Options.Count} Possible Answers)");
+                    }
+                    Console.WriteLine("Press any key to return to the settings menu...");
+                    Console.ReadKey();
+                    Console.Clear();
                     break;
                 case "2":
                     // Add Question
@@ -75,16 +82,9 @@ namespace QuizMaster
                     Console.Clear();
                     break;
                 case "3":
-                    // List Questions
+                    // Return to menu
                     Console.Clear();
-                    List<QuizQuestion> questions = Helpers.GetQuestions();
-                    foreach(QuizQuestion question in questions)
-                    {
-                        Console.WriteLine($"{questions.IndexOf(question) + 1}. {question.Question} ({question.Options.Count} Possible Answers)");
-                    }
-                    Console.WriteLine("Press any key to return to the settings menu...");
-                    Console.ReadKey();
-                    Console.Clear();
+                    Program.PrintAndListenForOptions();
                     break;
                 default:
                     Console.WriteLine("Invalid input. Please try again.");
