@@ -10,8 +10,8 @@
     <PackageId>QuizMaster</PackageId>
     <Title>QuizMaster</Title>
     <Version>1.0.0</Version>
-    <Authors>Ciaran Saundry</Authors>
-    <Company>Ciaran Saundry</Company>
+    <Authors>CS</Authors>
+    <Company>CS</Company>
     <Product>QuizMaster</Product>
     <Description>An application designed to run simple quizzes.</Description>
   </PropertyGroup>
