@@ -6,6 +6,12 @@ sidebar_position: 1
 
 There are several different instances where you will be required to interact with the program.
 
+## Downloading
+
+Download the ZIP file from [here](https://github.com/techsideofficial/otc-l2-dtsd-quiz/releases/download/1.0.0/QuizMaster_Release.zip)
+
+Extract the zip file, and run **QuizMaster.exe**
+
 ## Starting the quiz
 
 Type `1` and press enter to start the quiz.

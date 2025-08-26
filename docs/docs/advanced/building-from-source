@@ -1,0 +1,7 @@
+---
+sidebar_position: 3
+---
+
+# Building from source
+
+Open the **.sln** file, then right click on the project in the solution explorer, and click build.
