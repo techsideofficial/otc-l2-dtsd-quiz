@@ -8,7 +8,7 @@ There are several different instances where you will be required to interact wit
 
 ## Downloading
 
-Download the ZIP file containing the program from [here](https://github.com/techsideofficial/otc-l2-dtsd-quiz/releases/download/1.0.0/QuizMaster_Release.zip)
+Download the ZIP file containing the program from [here](https://github.com/techsideofficial/otc-l2-dtsd-quiz/releases/download/1.0.0/QuizMaster_Release_OneFile.zip)
 
 Extract the zip file, and run **QuizMaster.exe**
 
